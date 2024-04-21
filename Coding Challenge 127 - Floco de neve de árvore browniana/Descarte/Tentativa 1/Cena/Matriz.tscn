@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bderd611c4wkj"]
+
+[ext_resource type="Script" path="res://Descarte/Tentativa 1/Script/Matriz.gd" id="1_7mdi0"]
+
+[node name="Matriz2" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7mdi0")

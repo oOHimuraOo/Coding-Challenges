@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://duaitl58o1vo3"]
+
+[ext_resource type="Texture2D" uid="uid://bjmrb7no7yr3o" path="res://icon.svg" id="1_61h08"]
+
+[node name="Ponto2" type="TextureRect"]
+offset_right = 10.0
+offset_bottom = 10.0
+texture = ExtResource("1_61h08")
+expand_mode = 1

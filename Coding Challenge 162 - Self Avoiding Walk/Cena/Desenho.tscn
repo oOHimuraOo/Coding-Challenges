@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://7tp6agsi0f1x"]
+
+[ext_resource type="Script" path="res://Script/Comportamento/Desenho.gd" id="1_nl7pm"]
+
+[node name="Desenho" type="Node2D"]
+script = ExtResource("1_nl7pm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(2.5, 2.5)

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b08d1yi7bx6kq"]
+
+[ext_resource type="Texture2D" uid="uid://bjmrb7no7yr3o" path="res://icon.svg" id="1_xi2ts"]
+[ext_resource type="Script" path="res://Descarte/Tentativa 1/Script/ponto.gd" id="2_oyfk6"]
+
+[node name="Ponto" type="TextureRect" groups=["flocosDeNeve"]]
+offset_right = 10.0
+offset_bottom = 10.0
+texture = ExtResource("1_xi2ts")
+expand_mode = 1
+script = ExtResource("2_oyfk6")

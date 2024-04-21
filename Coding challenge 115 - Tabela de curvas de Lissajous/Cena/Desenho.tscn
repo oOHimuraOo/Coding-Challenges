@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://duojwrlkcvc8j"]
+
+[ext_resource type="Script" path="res://Script/Comportamento/Desenho.gd" id="1_moa71"]
+
+[node name="Desenho" type="Node2D"]
+script = ExtResource("1_moa71")

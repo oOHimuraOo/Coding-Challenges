@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://q01568pkh363"]
+
+[ext_resource type="Texture2D" uid="uid://bjmrb7no7yr3o" path="res://icon.svg" id="1_lc5sx"]
+[ext_resource type="Script" path="res://Descarte/Tentativa 2/Script/Particula.gd" id="2_koxvy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wc12a"]
+radius = 1.0
+
+[node name="Particula" type="TextureRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("1_lc5sx")
+expand_mode = 1
+script = ExtResource("2_koxvy")
+
+[node name="area" type="Area2D" parent="."]
+
+[node name="forma" type="CollisionShape2D" parent="area"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_wc12a")
