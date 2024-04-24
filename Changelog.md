@@ -71,5 +71,7 @@ All notable changes to this project will be documented in this file.
     - Poisson-disc sampling
 
 ### Changes
+- padronizaçao dos nomes das pastas e projetos.
+    - Coding Challenge 115 - Tabela de curvas de lissajous
 - Atualizaçao de informação.
     - changelog.md
