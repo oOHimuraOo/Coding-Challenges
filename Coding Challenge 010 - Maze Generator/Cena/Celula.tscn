@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0oy4rxjf103a"]
+
+[ext_resource type="Script" path="res://Script/Celula.gd" id="1_6sh2q"]
+
+[node name="Celula" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6sh2q")

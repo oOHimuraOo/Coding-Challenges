@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdge0ommayl73"]
+
+[ext_resource type="Script" path="res://Scripts/Desenho.gd" id="1_bkvqt"]
+
+[node name="Desenho" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bkvqt")
+
+[node name="Camera2D" type="Camera2D" parent="."]

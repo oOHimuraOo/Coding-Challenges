@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.1] - 20-04-2024
+## [0.0.01] - 20-04-2024
 ### Created
 - all projects that are related with a coding challenge will be updated in this file. New challenges, or update in old challenges will be only be shown in this project folder. 
 
@@ -36,3 +36,40 @@ All notable changes to this project will be documented in this file.
 
 ### Footnotes
 - The coding challenge 21. IT IS NOT OPTIMIZED. IT CAN FREEZE YOUR PC. This may happen because it generates a new picture with the size of a pixel for each pixel. One day I plan on making this with shaders.
+
+## [0.0.02] - 22/04/2024
+### NO COMMIT
+- Apesar de ter tido atualização no repositorio, não considerei importante o suficiente para um commit.
+
+### New
+- Novo desafio concluido.
+    - Coding Challenges 001 - Starfield Simulation
+    - Executaveis/Coding Challenge 001
+    - Coding Challenges 010 - Maze Generator
+    - Coding CHallenges 015 - Fractal Tree
+- Novo EXE.
+    - Starfield Simulation
+    - Maze Generator
+    - Fractal Tree
+
+### Changes
+- padronização dos nomes das pastas e projetos.
+    - Coding challenges 021 - Mandelbrot set
+    - executaveis/Coding Challenge 021
+
+- Atualização de informação.
+    - changelog.md
+
+## [0.0.03] - 22/04/2024
+### Commit
+- Com o acumulo de modificações feitas no repositorio o commit resolvi fazer um commit.
+
+### New
+- Novo desafio concluido.
+    - conding challenge 033 - Poisson-disc sampling
+- Novo EXE.
+    - Poisson-disc sampling
+
+### Changes
+- Atualizaçao de informação.
+    - changelog.md

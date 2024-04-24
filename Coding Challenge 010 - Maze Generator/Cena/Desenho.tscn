@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://3ntt0e2qlu4v"]
+
+[ext_resource type="Script" path="res://Script/Desenho.gd" id="1_m266a"]
+
+[node name="Desenho" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_m266a")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
