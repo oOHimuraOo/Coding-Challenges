@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl6ut3xbg72dm"]
+
+[ext_resource type="Script" path="res://Script/TSPSimples.gd" id="1_dvq2n"]
+
+[node name="TSP_Simples" type="Node2D"]
+script = ExtResource("1_dvq2n")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1.0
+offset_bottom = 67.0
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "Pressione \"Q\" para voltar ao menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

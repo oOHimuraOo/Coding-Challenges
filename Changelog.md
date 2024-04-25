@@ -75,3 +75,17 @@ All notable changes to this project will be documented in this file.
     - Coding Challenge 115 - Tabela de curvas de lissajous
 - Atualizaçao de informação.
     - changelog.md
+
+## [0.0.04] - 25/04/2024
+### Commit
+- Conclusão do algoritmo TSP. Criação extra da versão heuristica.
+
+### New
+- Novo desafio concluido.
+    - coding Challenge 033 - Traveling Salesperson
+- Novo EXE.
+    - Traveling Salesperson
+
+### Changes
+- Atualização de informção.
+    - changelog.md

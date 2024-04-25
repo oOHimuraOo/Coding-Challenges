@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://4i3dg10if747"]
+
+[ext_resource type="Script" path="res://Script/TSPComLexigrafico.gd" id="1_m5uan"]
+
+[node name="TspComLexigrafico" type="Node2D"]
+script = ExtResource("1_m5uan")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -67.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
