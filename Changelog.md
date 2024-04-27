@@ -89,3 +89,14 @@ All notable changes to this project will be documented in this file.
 ### Changes
 - Atualização de informção.
     - changelog.md
+
+## [0.0.04] - 27/04/2024
+### commit
+- Apesar de ainda não terminado. A implementação basica já está funcional e o codigo deve funcionar para formas geometricas de 4 lados. Estou implementando formas geometricas mais complexas.
+### New
+    - coding Challenge 054 - Islamic tilling
+
+### Changes
+- atualização de informação.
+    -changelog.md
+    

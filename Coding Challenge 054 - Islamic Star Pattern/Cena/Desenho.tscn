@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3 uid="uid://ojkg5wdbnql3"]
+
+[ext_resource type="Script" path="res://Scripts/Desenho.gd" id="1_pe24m"]
+
+[node name="Desenho" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pe24m")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ContainerDeTiles" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Sliders" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Sliders"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="SliderAngulo" type="HSlider" parent="VBoxContainer/Sliders"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Define o valor do Angulo"
+max_value = 90.0
+ticks_on_borders = true
+
+[node name="SliderDelta" type="HSlider" parent="VBoxContainer/Sliders"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Define o valor de Delta"
+max_value = 1.0
+step = 0.01
+
+[node name="SliderIncremento" type="HSlider" parent="VBoxContainer/Sliders"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Define o tamanho dos tiles"
+min_value = 50.0
+max_value = 300.0
+value = 174.0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/Sliders"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[connection signal="value_changed" from="VBoxContainer/Sliders/SliderAngulo" to="." method="_on_slider_angulo_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/Sliders/SliderDelta" to="." method="_on_slider_delta_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/Sliders/SliderIncremento" to="." method="_on_slider_incremento_value_changed"]
