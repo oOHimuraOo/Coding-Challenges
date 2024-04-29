@@ -23,7 +23,7 @@ func revelar(nodoPai:Node2D) -> void:
 	self.add_point(B)
 	nodoPai.add_child(self)
 
-func criar_hankin(angulo:float, delta:float) -> void:
+func criar_hankin(angulo:float, delta:float, c1:Color, c2:Color) -> void:
 	var centro:Vector2 = self.A + self.B
 	centro = centro * 0.5
 	
@@ -39,8 +39,8 @@ func criar_hankin(angulo:float, delta:float) -> void:
 	v1 = v1.rotated(deg_to_rad(-angulo)).normalized()
 	v2 = v2.rotated(deg_to_rad(angulo)).normalized()
 	
-	self.hankin_1 = HANKIN.new(desvio_1, v1)
-	self.hankin_2 = HANKIN.new(desvio_2, v2)
+	self.hankin_1 = HANKIN.new(desvio_1, v1, 1, c2)
+	self.hankin_2 = HANKIN.new(desvio_2, v2, 1, c2)
 
 func encontrarFim(outro:BORDA) -> void:
 	self.hankin_1.encontrarFim(outro.hankin_1)

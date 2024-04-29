@@ -53,6 +53,24 @@ min_value = 50.0
 max_value = 300.0
 value = 174.0
 
+[node name="SliderFormaG" type="HSlider" parent="VBoxContainer/Sliders"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Altera a forma geometrica"
+min_value = 3.0
+max_value = 20.0
+value = 4.0
+
+[node name="BordaCor" type="ColorPickerButton" parent="VBoxContainer/Sliders"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 0, 1)
+
+[node name="HankinCor" type="ColorPickerButton" parent="VBoxContainer/Sliders"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 1)
+
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/Sliders"]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
@@ -64,3 +82,6 @@ layout_mode = 2
 [connection signal="value_changed" from="VBoxContainer/Sliders/SliderAngulo" to="." method="_on_slider_angulo_value_changed"]
 [connection signal="value_changed" from="VBoxContainer/Sliders/SliderDelta" to="." method="_on_slider_delta_value_changed"]
 [connection signal="value_changed" from="VBoxContainer/Sliders/SliderIncremento" to="." method="_on_slider_incremento_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/Sliders/SliderFormaG" to="." method="_on_slider_forma_g_value_changed"]
+[connection signal="color_changed" from="VBoxContainer/Sliders/BordaCor" to="." method="_on_borda_cor_color_changed"]
+[connection signal="color_changed" from="VBoxContainer/Sliders/HankinCor" to="." method="_on_hankin_cor_color_changed"]

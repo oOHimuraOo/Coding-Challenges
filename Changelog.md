@@ -91,12 +91,31 @@ All notable changes to this project will be documented in this file.
     - changelog.md
 
 ## [0.0.04] - 27/04/2024
-### commit
+### Commit
 - Apesar de ainda não terminado. A implementação basica já está funcional e o codigo deve funcionar para formas geometricas de 4 lados. Estou implementando formas geometricas mais complexas.
 ### New
-    - coding Challenge 054 - Islamic tilling
+- coding Challenge 054 - Islamic tilling
 
 ### Changes
 - atualização de informação.
     -changelog.md
     
+## [0.0.05] - 29/04/2024
+### Commit
+- coding challenge 054 finalizado.
+
+### New
+- Novo EXE.
+    - Islamic Tiles Pattern
+
+### Changes
+- atualização.
+    - Cena
+        - Desenho.tscn
+    - Classes
+        - Borda.gd
+        - Pligono.gd
+    - Scripts
+        Desenho.gd
+    export_pressets.cfg
+    project.godot

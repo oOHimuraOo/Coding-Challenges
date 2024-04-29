@@ -4,6 +4,9 @@ extends Control
 @onready var slider_angulo:HSlider = $VBoxContainer/Sliders/SliderAngulo
 @onready var slider_delta:HSlider = $VBoxContainer/Sliders/SliderDelta
 @onready var slider_incremento:HSlider = $VBoxContainer/Sliders/SliderIncremento
+@onready var slider_forma_g = $VBoxContainer/Sliders/SliderFormaG
+@onready var borda_cor = $VBoxContainer/Sliders/BordaCor
+@onready var hankin_cor = $VBoxContainer/Sliders/HankinCor
 
 var poligonos:Array = []
 
@@ -17,12 +20,15 @@ var tamanhoTela:Vector2i = Vector2i(1920,1080)
 var resolucaoTela:Vector2i = Vector2i(2260,1200)
 
 var numeroDeLados:int = 4
+var cor1:Color = 'ffff00'
+var cor2:Color = 'ffffff'
 
 func _ready():
 	iniciar_padronizacao_tela()
 	angulo = slider_angulo.value
 	delta = slider_delta.value
 	incremento = slider_incremento.value
+	numeroDeLados = slider_forma_g.value
 	largura = tamanhoTela.x / incremento
 	altura = (tamanhoTela.y - 30) / incremento
 	await get_tree().create_timer(0.1).timeout
@@ -41,16 +47,9 @@ func inicializar_tiles() -> void:
 		for y in range(altura):
 			var poli:POLIGONO = POLIGONO.new()
 			container_de_tiles.add_child(poli)
-			var teste_x = poli.criarFormaGeometricaRegular(numeroDeLados,incremento, x * incremento + (x*incremento), y* incremento + (y*incremento))
-			#var teste_y = poli.criarFormaGeometrica(numeroDeLados,y * incremento)
-			var novosV:Array
-			for i in range(numeroDeLados):
-				var novoX = teste_x[i].x
-				#var novoY = teste_y[i].y
-				#novosV.append(Vector2(novoX,novoY))
-			poli.adicionar_vertice_regular(teste_x)
-			poli.fechar()
-			poli.criar_hankin(angulo,delta)
+			poli.criar_poligono_regular(numeroDeLados,x,y,incremento, cor1, cor2)
+			poli.fechar(cor1, cor2)
+			poli.criar_hankin(angulo,delta, cor1, cor2)
 			poligonos.append(poli)
 
 func limpar_tiles() -> void:
@@ -76,3 +75,22 @@ func _on_slider_incremento_value_changed(value):
 	altura = (tamanhoTela.y - 30) / incremento
 	limpar_tiles()
 	inicializar_tiles()
+
+
+func _on_slider_forma_g_value_changed(value):
+	numeroDeLados = value
+	limpar_tiles()
+	inicializar_tiles()
+
+
+func _on_borda_cor_color_changed(color):
+	cor1 = color
+	limpar_tiles()
+	inicializar_tiles()
+
+
+func _on_hankin_cor_color_changed(color):
+	cor2 = color
+	limpar_tiles()
+	inicializar_tiles()
+
