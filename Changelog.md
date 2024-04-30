@@ -119,3 +119,22 @@ All notable changes to this project will be documented in this file.
         Desenho.gd
     export_pressets.cfg
     project.godot
+- atualização de informacoes.
+    Changelog.md
+
+## [0.0.06] - 30/04/2024
+### Commit
+- Desafio 056 e desafio 065 finalizados.
+
+### New
+- Novo desafio concluido.
+    - Coding Challenge 056 - Attraction Forces
+    - Coding Challenge 065 - Binary tree
+
+- Novo EXE.
+    - Attraction Forces
+    - Binary Tree
+
+### Changes
+- Atualizacao de informacoes.
+    - Changelog.md

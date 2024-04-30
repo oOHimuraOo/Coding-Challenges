@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyxg2wius80oe"]
+
+[ext_resource type="Script" path="res://Scripts/Desenho.gd" id="1_4b2x3"]
+
+[node name="Desenho" type="Node2D"]
+script = ExtResource("1_4b2x3")
+
+[node name="Atract" type="Node" parent="."]
+
+[node name="Partic" type="Node" parent="."]
