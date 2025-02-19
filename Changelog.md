@@ -138,3 +138,18 @@ All notable changes to this project will be documented in this file.
 ### Changes
 - Atualizacao de informacoes.
     - Changelog.md
+
+## [0.0.07] - 18/02/2025
+### Commit
+- desafio 180 finalizado.
+
+### New
+- Novo desafio concluido.
+    - Coding Challenge 180 - Falling Sand
+
+- Novo EXE.
+    - Falling Sand
+
+### Changes
+- Atualizacao de informacoes.
+    - Changelog.md

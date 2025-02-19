@@ -3,7 +3,7 @@ extends Control
 
 signal acabouTrecho()
 
-@onready var particula_cena:PackedScene = preload("res://Tentativa 2/Cena/Particula.tscn")
+@onready var particula_cena:PackedScene = preload("res://Descarte/Tentativa 2/Cena/Particula.tscn")
 
 var atual:PARTICULA
 var flocosDeNeve:Array = []
