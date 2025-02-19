@@ -167,6 +167,18 @@ This is a visual representation of how you can make something move through an ar
   <img src="https://github.com/user-attachments/assets/9c652618-a441-4e1e-bbeb-ffa6fb1d2032" alt="Self Avoiding Walk GIF" width="300"/>
 </div>
 
+### CODING CHALLENGE 180 -> Falling Sand
+This simulates the behavior of falling sand. The challenge was about how to simulate this without using a physics engine and only working with the draw function to make the simulation.
+
+**How to use:**
+- you can deploy a single or multiple strand(s) of sand with the left mouse button.
+- you can also enable or disable the deploy of multiple sand strands by pressing space bar.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f33f282c-e909-4bc5-a27a-ee6a27e9c50b" alt="Falling Sand GIF" width="300" />
+</div>
+
+
 ### CODING CHALLENGE 182 -> Fractal de Junta Apolônica
 This is a visual representation of a fractal. It works by generating circles with different diameters that have to be connected by only one section.
 
